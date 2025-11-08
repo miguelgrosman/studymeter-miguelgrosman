@@ -10,6 +10,27 @@
 
 # production
 /build
+/dist
+/dist-ssr
+/out
+/release
+
+# Electron build artifacts
+*.asar
+*.exe
+*.dmg
+*.AppImage
+*.deb
+*.snap
+*.pkg
+*.msi
+*.zip
+*.tar.gz
+*.tar.xz
+*.app/
+win-unpacked/
+mac-arm64/
+linux-unpacked/
 
 # misc
 .DS_Store
@@ -18,7 +39,33 @@
 .env.test.local
 .env.production.local
 
+# logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-"dist/" 
+pnpm-debug.log*
+logs/
+*.log
+*.log.*
+
+# IDE and editor folders
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# cache
+.cache/
+.vite/
+.eslintcache
+tsconfig.tsbuildinfo
+*.tsbuildinfo
+
+# backups
+*.bak
+*.old
+*.orig
+*.rej
