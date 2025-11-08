@@ -1,0 +1,156 @@
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: "Segoe UI", sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  font-size: 12px;
+  color: #00ff99;
+}
+
+.clock {
+  font-size: 14px;
+  color: #aaa;
+}
+
+.main-timer {
+  font-size: 4rem;
+  margin: 10px 0;
+}
+
+.daily-timer {
+  font-size: 1.4rem;
+  color: #00ff99;
+  margin-bottom: 10px;
+}
+
+.instruction {
+  font-size: 0.9rem;
+  color: #888;
+  margin-bottom: 15px;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.subject-select {
+  background: #111;
+  color: #fff;
+  border: 1px solid #00ff99;
+  padding: 8px;
+  border-radius: 6px;
+}
+
+.btn {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.start {
+  background: #00ff99;
+  color: #000;
+}
+
+.pause {
+  background: #ffcc00;
+  color: #000;
+}
+
+.finish {
+  background: #ff4444;
+  color: #fff;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.subjects {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 2px;
+  padding: 20px;
+}
+
+.subject-card {
+  background: #111;
+  border-radius: 10px;
+  padding: 15px;
+  position: relative;
+  box-shadow: 0 0 10px #00ff9944;
+}
+
+.subject-card h3 {
+  margin: 0;
+}
+
+.subject-card p {
+  margin: 5px 0 10px;
+  font-size: 0.9rem;
+  color: #bbb;
+}
+
+.add-card {
+  border: 2px dashed #00ff99;
+  cursor: pointer;
+}
+
+.add-card:hover {
+  background: #003322;
+}
+
+.delete-btn {
+  position: absolute;
+  top: 5px;
+  right: 8px;
+  background: transparent;
+  color: #ff4444;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.progress-bar {
+  height: 6px;
+  background: #222;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #00ff99;
+  transition: width 0.3s;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .subjects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .main-timer {
+    font-size: 3rem;
+  }
+
+  .daily-timer {
+    font-size: 1rem;
+  }
+}
