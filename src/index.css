@@ -82,12 +82,14 @@ header {
   opacity: 0.8;
 }
 
-.subjects {
+..subjects {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 2px;
+  justify-content: center; /* <-- centraliza os cartões */
+  gap: 20px;
   padding: 20px;
 }
+
 
 .subject-card {
   background: #111;
